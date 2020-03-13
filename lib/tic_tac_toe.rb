@@ -63,7 +63,6 @@ def turn_count(array)
     if (element == "X" || element == "O")
       counter += 1
     else
-      # do nothing
     end
   end
   return counter
@@ -88,7 +87,6 @@ def won?(board)
     if ((position_1 == "X" && position_2 == "X" && position_3 == "X") || (position_1 == "O" && position_2 == "O" && position_3 == "O"))
       return win_combination
     else
-      # do nothing
     end
   end
   return nil
@@ -100,7 +98,6 @@ def full?(array)
     if (element == "X" || element == "O")
       counter += 1
     else
-      # do nothing
     end
   end
   if counter == 9
@@ -137,7 +134,6 @@ def winner(array)
       elsif (position_1 == "O" && position_2 == "O" && position_3 == "O")
         return "O"
       else
-        # do nothing
       end
     end
   else
@@ -154,7 +150,6 @@ def play(board)
   elsif draw?(board)
     puts "Cat's Game!"
   else
-    #do nothing
   end
 end
 
