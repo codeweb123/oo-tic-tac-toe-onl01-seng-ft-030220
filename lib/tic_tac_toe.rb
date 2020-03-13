@@ -1,7 +1,7 @@
 require 'pry'
 class TicTacToe
   def initialize
-    @board = ["","","","","","","","",""]
+    @board = [" "," "," "," "," "," "," "," "," "]
   end
   WIN_COMBINATIONS = [
   [0,1,2],
