@@ -40,7 +40,7 @@ class TicTacToe
   	#if move is invalid
   	elsif position_taken?(index) == true
   		return false
-  	elsif index.between?(0, 8) == false 
+  	elsif index.between?(0, 8) == false
   		return false
   	end
   end
@@ -77,7 +77,7 @@ class TicTacToe
   	elsif valid_move?(index) == false
   		puts "Please enter 1-9:"
   		input = gets.chomp
-  	else 
+  	else
   		puts "Please enter 1-9:"
   		input = gets.chomp
   	end
@@ -99,11 +99,11 @@ class TicTacToe
 
   #draw
   def draw?
-  		if won? 
+  		if won?
   			return false
-  		elsif full? == false 
-  			return false 
-  		else 
+  		elsif full? == false
+  			return false
+  		else
   			return true
   		end
   end
@@ -133,7 +133,7 @@ class TicTacToe
 
       if draw?
       	puts "Cat's Game!"
-      elsif winner == "X" 
+      elsif winner == "X"
       	puts "Congratulations X!"
       elsif winner == "O"
       	puts "Congratulations O!"
